@@ -8,5 +8,5 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :validatable
   include DeviseTokenAuth::Concerns::User
   has_many :dpls, dependent: :destroy
-  has_many :simons through: :dpls
+  has_many :simons, through: :dpls
 end
