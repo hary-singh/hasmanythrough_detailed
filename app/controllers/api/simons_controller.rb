@@ -1,5 +1,5 @@
 class Api::SimonsController < ApplicationController
-  before_action :set_simons, only: [:show, :update, :destroy]
+  before_action :set_simons, only: [:show, :update, :destroy, :simonUsers]
   def index
     render json: Simon.all
   end

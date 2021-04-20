@@ -12,6 +12,7 @@ const Dpls = ({ grabDpls, simonId, addDpl }) => {
   }, [])
   return(
     <>
+      {/* <Link to=`/onedpl/:id` */}
       { dpls.length > 0 ? 
         <>
           { dpls.map( d => 

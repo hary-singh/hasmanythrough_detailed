@@ -9,6 +9,7 @@ import FetchUser from './components/auth/FetchUser';
 import ProtectedRoute from './components/auth/ProtectedRoute';
 import UserSimons from './components/auth/UserSimons';
 import Simons from './components/simons/Simons';
+import SingleUsersSimon from './components/auth/SingleUsersSimon';
 const App = () => (
   <>
     <Navbar />
@@ -18,6 +19,7 @@ const App = () => (
           <Route exact path="/" component={Home} />
           <ProtectedRoute exact path="/user/simons" component={UserSimons} />
           <ProtectedRoute exact path='/simons' component={Simons} />
+          <ProtectedRoute exact path='/user/simmons/:id' component={SingleUsersSimon} />
           <Route exact path='/login' component={Login} />
           <Route exact path='/register' component={Register} />
           <Route component={NoMatch} />
